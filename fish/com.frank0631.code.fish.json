@@ -1,0 +1,9 @@
+{
+  "id": "com.frank0631.code.fish",
+  "version": "0.0.1",
+  "name": "Fish",
+  "description": "Embedded Fish Shell",
+  "dependencies": [],
+  "properties": {},
+  "servers": {}
+}
