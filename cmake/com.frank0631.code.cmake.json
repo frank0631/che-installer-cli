@@ -1,0 +1,9 @@
+{
+  "id": "com.frank0631.code.cmake",
+  "version": "0.0.2",
+  "name": "CMake",
+  "description": "CMake build tool",
+  "dependencies": [],
+  "properties": {},
+  "servers": {}
+}
