@@ -1,0 +1,9 @@
+{
+  "id": "com.frank0631.code.thrift",
+  "version": "0.0.2",
+  "name": "Thrift",
+  "description": "Apache Thrift compiler",
+  "dependencies": ["com.frank0631.code.cmake"],
+  "properties": {},
+  "servers": {}
+}
