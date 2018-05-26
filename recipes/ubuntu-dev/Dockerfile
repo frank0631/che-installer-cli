@@ -3,7 +3,7 @@
 
 FROM eclipse/ubuntu_gradle
 
-USER user
+USER root
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && \
 sudo apt-get install -y --no-install-recommends \
