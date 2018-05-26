@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # script to install thrift
 set -x
 
@@ -78,11 +78,13 @@ fi
 
 wget -q -nc http://mirrors.sonic.net/apache/thrift/0.11.0/thrift-0.11.0.tar.gz
 tar -xzf thrift-0.11.0.tar.gz
-pushd thrift-0.11.0 > /dev/null
+
+workingdir=$(pwd)
+cd thrift-0.11.0
 ./configure
 ${SUDO} cmake -DBUILD_TESTING=OFF -DBUILD_TESTING=OFF -DBUILD_TUTORIALS=OFF .
 ${SUDO} make install .
-popd > /dev/null
+cd $workingdir
 
 rm -rf ./thrift-0.11.0 ./thrift-0.11.0.tar.gz
 command -v thrift >/dev/null 2>&1 && THRIFT_INSTALLED=true
