@@ -78,12 +78,13 @@ fi
 
 wget -q -nc http://mirrors.sonic.net/apache/thrift/0.11.0/thrift-0.11.0.tar.gz
 tar -xzf thrift-0.11.0.tar.gz
-cd thrift-0.11.0
+pushd thrift-0.11.0 > /dev/null
 ./configure
 ${SUDO} cmake -DBUILD_TESTING=OFF -DBUILD_TESTING=OFF -DBUILD_TUTORIALS=OFF .
 ${SUDO} make install .
+popd > /dev/null
 
-rm -rf ./thrift-0.11.0 thrift-0.11.0.tar.gz
+rm -rf ./thrift-0.11.0 ./thrift-0.11.0.tar.gz
 command -v thrift >/dev/null 2>&1 && THRIFT_INSTALLED=true
 
 if $THRIFT_INSTALLED; then
