@@ -1,4 +1,4 @@
-# Development environment for che workspace
+    # Development environment for che workspace
 # Java, Gradle, make, thrift
 
 FROM eclipse/ubuntu_gradle
