@@ -14,4 +14,5 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN sudo apt-get update && \
 sudo apt-get install -y --no-install-recommends \
+libboost-all-dev \
 build-essential
